@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar projeto</title>
+    <link rel="stylesheet" href="./style.css" class="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="header-left">
+          <a href="#">Home</a>
+          <a href="#"
+            >Explore
+            <span class="material-symbols-outlined"> expand_more </span></a
+          >
+          <a href="#"
+            >Resources
+            <span class="material-symbols-outlined"> expand_more </span></a
+          >
+        </div>
+        <div class="header-right">
+          <a class="notifications" href="#"
+            ><span class="material-symbols-outlined"> notifications </span></a
+          >
+          <a class="profile-header" href="#"
+            ><span class="profile-pic">P</span>
+            <span class="material-symbols-outlined"> expand_more </span></a
+          >
+        </div>
+      </header>
+      <main>
+        <aside>
+          <a class="menu" href="#"
+            ><span class="material-symbols-outlined"> menu </span></a
+          >
+        </aside>
+        <section class="section-form">
+          <div class="new-project-title">
+            <h1>Novo Projeto</h1>
+            <span class="material-symbols-outlined"> assignment_add </span>
+          </div>
+
+          <form>
+            <label for="title"
+              >Título do Projeto: <strong style="color: red">*</strong></label
+            >
+            <input type="text" name="title" id="project-title" />
+            <label for="description"
+              >Descrição: <strong style="color: red">*</strong></label
+            >
+            <input type="text" name="description" id="project-description" />
+            <label for="prototype">Protótipo do projeto:</label>
+            <label for="prototype-file" class="file-upload"
+              ><input
+                type="file"
+                name="prototype"
+                id="prototype-file"
+                accept="image/png, image/jpeg"
+                multiple
+              />Escolher arquivos</label
+            >
+
+            <label for="tecnologies"
+              >Tecnologias requeridas <i>(linguagens, ferramentas, etc)</i>:
+              <strong style="color: red">*</strong></label
+            >
+            <input type="text" name="tecnologies" id="tecnologies" />
+            <label for="team-structure"
+              >Estrutura do time de desenvolvimento:
+              <strong style="color: red">*</strong></label
+            >
+            <div class="team-check-box">
+              <input
+                type="checkbox"
+                name="team-structure"
+                id="designers"
+              /><label for="designers">Designers</label>
+              <input
+                type="checkbox"
+                name="team-structure"
+                id="front-end"
+              /><label for="front-end">Front-end Developers</label>
+              <input
+                type="checkbox"
+                name="team-structure"
+                id="back-end"
+              /><label for="back-end">Back-end Developers</label>
+              <input type="checkbox" name="team-structure" id="qa" /><label
+                for="qa"
+                >QA</label
+              >
+              <input
+                type="checkbox"
+                name="team-structure"
+                id="plat-eng"
+              /><label for="plat-eng">Plataform Engineers</label>
+              <input type="checkbox" name="others" id="others" /><label
+                for="others"
+                >Outros</label
+              >
+            </div>
+            <label for="deadline"
+              >Expectativa de tempo <i style="font-size: 12px">(deadline)</i>:
+            </label>
+            <input type="date" name="deadline" id="deadline" />
+            <label for="client"
+              >Cliente/Agência: <strong style="color: red">*</strong></label
+            >
+            <div class="check-radio">
+              <input
+                type="radio"
+                name="check-radio"
+                id="client-yes"
+                value="yes"
+                checked
+              />Sim
+              <input
+                type="radio"
+                name="check-radio"
+                id="client-no"
+                value="no"
+              />Não
+            </div>
+
+            <label for="client-yes">Sim? Caso queira, compartilhe:</label>
+            <input type="text" name="client-yes" id="client-yes" />
+
+            <label for="workflow"
+              >Workflow
+              <i style="font-size: 12px">(plano de realização do projeto)</i
+              >:</label
+            >
+            <input type="text" name="workflow" id="workflow" />
+            <label for="workload"
+              >Workload <i style="font-size: 12px">(cronograma)</i>:</label
+            >
+            <input type="text" name="workload" id="workload" />
+            <button class="button-send-form">Enviar</button>
+          </form>
+          <i style="font-size: 14px"
+            ><strong style="color: red">*</strong> (Preenchimento
+            obrigatório)</i
+          >
+        </section>
+        <section class="to-faq">
+          <div class="faq-left">
+            <h1>Alguma dúvida?</h1>
+            <p>Dê uma olhada na nossa FAQ. Sua dúvida pode estar lá.</p>
+          </div>
+          <button>FAQ</button>
+        </section>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
