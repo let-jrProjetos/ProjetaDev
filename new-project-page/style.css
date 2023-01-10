@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  color: #53536a;
+  gap: 8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #53536a;
+}
+
+header {
+  background-color: #f2f4f7;
+  display: flex;
+  padding: 0 5rem 0 5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  height: 3.67rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.header-left > a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.header-right > a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.notifications {
+  background-color: #e5d5f2;
+  border-radius: 100%;
+  padding: 0.4rem;
+}
+
+.profile-pic {
+  background-color: #e5d5f2;
+  border-radius: 100%;
+  padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+}
+
+.notifications:hover,
+.profile-pic:hover {
+  background-color: #caabe5;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 16rem 1fr 16rem;
+  grid-template-rows: 1fr;
+  row-gap: 10rem;
+}
+
+aside {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 0 0;
+}
+
+.menu > span {
+  background-color: #e5d5f2;
+  border-radius: 100%;
+  padding: 0.4rem;
+}
+
+.menu > span:hover {
+  background-color: #caabe5;
+}
+
+.section-form {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 0 0 16rem;
+}
+
+.new-project-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 20px;
+  color: #655185;
+  padding: 0 0 0 8rem;
+}
+
+.section-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 4rem 0 0 0;
+}
+
+input[type="text"] {
+  width: 30rem;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #53536a;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+label[for="tecnologies"] > i {
+  font-size: 12px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 0.2rem 0.2rem;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 0.2rem;
+}
+
+.file-upload:hover {
+  background-color: #e5d5f2;
+  color: white;
+}
+
+.file-upload:active {
+  background-color: #caabe5;
+  color: white;
+}
+
+.team-check-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+input[type="checkbox"] {
+  width: 1rem;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="date"] {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 0.2rem 0.2rem;
+  cursor: pointer;
+  font-size: 14px;
+  color: #53536a;
+  border-radius: 0.2rem;
+}
+
+input[type="date"]:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+input[type="date"]:hover {
+  background-color: #e5d5f2;
+  color: white;
+}
+
+input[type="date"]:active {
+  background-color: #caabe5;
+  color: white;
+}
+
+.check-radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.4rem;
+  align-items: center;
+}
+
+.button-send-form {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 0.4rem 0.4rem;
+  cursor: pointer;
+  font-size: 14px;
+  color: #53536a;
+  border-radius: 0.2rem;
+}
+
+.button-send-form:hover {
+  background-color: #e5d5f2;
+  color: white;
+}
+
+.button-send-form:active {
+  background-color: #caabe5;
+  color: white;
+}
+
+.to-faq {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background-color: #e5d5f2;
+  width: 54rem;
+  margin: 0 0 0 4rem;
+  height: 8rem;
+  border-radius: 0.75rem;
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20rem;
+}
+
+.to-faq > div > h1 {
+  font-size: 18px;
+}
+
+.to-faq > div > p {
+  font-size: 14px;
+}
+
+.to-faq > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.to-faq > button {
+  color: white;
+  background-color: #3e1660;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 0.4rem 0.4rem;
+  cursor: pointer;
+  width: 6rem;
+  height: 2rem;
+  font-size: 14px;
+  border-radius: 0.3rem;
+}
+
+footer {
+  height: 6rem;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
